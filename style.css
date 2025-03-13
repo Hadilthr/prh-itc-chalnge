@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+* {
+    font-family: "Forum", serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    height: 100vh;
+}
+
+/* Navigation Bar */
+header {
+    background-color: white;
+    height: 150px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.localisation, .contact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.contact a{
+    color: black;
+}
+
+.localisation p {
+    margin: 0;
+    font-size: 16px;
+    width: 150px;
+    text-align: center;
+}
+
+.nav h1 {
+    letter-spacing: 1px;
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-size: 45px;
+    font-style: italic;
+}
+
+hr {
+    width: 70%;
+    margin: auto;
+    height: 1px;
+    background-color: #ddd;
+    margin-bottom: 10px;
+}
+
+/* Navbar Container */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FDF5FF;
+    width: 1000px;
+    height: 50px;
+    margin: auto;
+    
+}
+
+.container a {
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    padding: 10px 15px;
+}
+
+
+.container a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #8B0C96, #FF3CAC, #8B0C96);
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+
+.container a:hover {
+    color: #8B0C96;
+    transform: translateY(-3px);
+    text-shadow: 0px 0px 10px rgba(139, 12, 150, 0.5);
+}
+
+.container a:hover::after {
+    width: 100%;
+}
+
+.container a:active {
+    animation: clickEffect 0.3s ease-in-out;
+}
+
+
+@keyframes clickEffect {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.icon{
+    display:none ;
+}
+/* Home section */
+
+.home{
+    margin-top: 200px;
+    background-color: rgba(253, 245, 255, 1);
+    display: flex;
+  
+}
+
+
+.home-content h1 {
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: #5A3E36;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    height: 130PX;
+    margin-top: 10px;
+    margin-left: 200pX;
+    
+}
+
+.home-content p {
+    text-indent: 20px;
+    text-align: center;
+    width: 500px;
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 30px;
+    margin-left:190px;
+}  
+.home-image{
+    margin-left: 60px;
+  
+}
+.home-image img{
+    width: 100%;
+    height: 100%;
+    margin-top: -10px;
+    
+}
+
+
+
+/* button */
+.home-content button {
+    background-color: #d896f7;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 50%;
+    box-shadow: 0 4px 10px rgba(216, 150, 247, 0.3);
+}
+
+.home-content button:hover {
+    background-color: #b57de5;
+    transform: scale(1.05);
+}
+.cercle {
+    background-color: rgba(233, 185, 243, 1);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;  
+    justify-content: center; 
+    align-items: center; 
+    }
+
+.cercle img {
+    width:60px;
+    height: 60px;
+    object-fit: cover;
+       }
+       .about-us h2{
+        margin-top: -30px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+        font-family: "Dancing Script", cursive;
+        font-weight: 700;
+        font-size: 45px;
+        font-style: italic;
+        color: #8B0C96;
+        text-align: center;
+
+       }
+       .about-us P{ 
+        margin-left: 150px;
+        font-size: 20px;
+        width: 1000Px;
+        text-align: center;
+        margin-bottom: 50px;
+
+       }  
+       .choix{
+
+        display: flex;
+        justify-content: space-around;
+       }
+ .item {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;  
+        justify-content: center; 
+        align-items: center; 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+        }
+
+.item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+   
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #ff9a9e;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff9a9e;
+}
+
+
+   
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .localisation, .contact {
+        margin-top: 10px;
+    }
+
+    .container  a {display: none;
+    }
+   .icon {
+        display:block;
+        display: flex;
+    }
+    
+}
+
+
+
