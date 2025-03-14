@@ -24,9 +24,9 @@
 </div>
 <hr>
 <div class="container">
-    <a href="#"> Home</a>
+    <a href="#home"> Home</a>
     <a href="#"> Order</a>
-    <a href="#"> Product</a>
+    <a href="#shop"> Product</a>
     <a href="#"> Lullis mystery</a>
     <i class="fa-solid fa-magnifying-glass"></i>
 
@@ -38,7 +38,7 @@
 </div>
 </div>
 </header>
-<div class="home">
+<div class="home" id="home">
     <div class="home-content">
         <h1>  Lullis Bites</h1>
         <p>Made for Dessert Lovers!
@@ -59,10 +59,8 @@
     <P>At Lullis Bites, we create desserts from scratch using cherished family recipes and only the finest ingredients. Baked fresh daily, our treats are made to bring joy in every bite. Because every moment deserves a little sweetness!</P>
     <div class="choix">
                 <div class="item"> <a href="#cupcake"><img src="image/11-removebg-preview.png" alt="Cup Cake"></a></div>
-                <div class="item"><img src="image/12-removebg-preview.png" alt="Patisserie"></div>
+                <div class="item"> <a href="#patessrie"><img src="image/12-removebg-preview.png" alt="Patisserie"></a></div>
                 <div class="item"><img src="image/13-removebg-preview.png" alt="Cookies"></div>
-                <div class="item"><img src="image/17-removebg-preview.png" alt="Brownies"></div>
-                <div class="item"><img src="image/18-removebg-preview.png" alt="Tarts"></div>
                 <div class="item"><img src="image/22-removebg-preview.png" alt="Savory"></div>
                 <div class="item"><img src="image/20-removebg-preview.png" alt="Cake"></div>
                 <div class="item"><img src="image/23-removebg-preview.png" alt="Traditional Cake"></div>
@@ -73,13 +71,14 @@
 </div>
 <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 150" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(253, 245, 255, 1)" offset="0%"></stop><stop stop-color="rgba(253, 245, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,75L18.5,80C36.9,85,74,95,111,85C147.7,75,185,45,222,47.5C258.5,50,295,85,332,97.5C369.2,110,406,100,443,87.5C480,75,517,60,554,65C590.8,70,628,95,665,95C701.5,95,738,70,775,60C812.3,50,849,55,886,65C923.1,75,960,90,997,102.5C1033.8,115,1071,125,1108,107.5C1144.6,90,1182,45,1218,30C1255.4,15,1292,30,1329,35C1366.2,40,1403,35,1440,50C1476.9,65,1514,100,1551,117.5C1587.7,135,1625,135,1662,112.5C1698.5,90,1735,45,1772,37.5C1809.2,30,1846,60,1883,82.5C1920,105,1957,120,1994,110C2030.8,100,2068,65,2105,62.5C2141.5,60,2178,90,2215,92.5C2252.3,95,2289,70,2326,55C2363.1,40,2400,35,2437,47.5C2473.8,60,2511,90,2548,92.5C2584.6,95,2622,70,2640,57.5L2658.5,45L2658.5,150L2640,150C2621.5,150,2585,150,2548,150C2510.8,150,2474,150,2437,150C2400,150,2363,150,2326,150C2289.2,150,2252,150,2215,150C2178.5,150,2142,150,2105,150C2067.7,150,2031,150,1994,150C1956.9,150,1920,150,1883,150C1846.2,150,1809,150,1772,150C1735.4,150,1698,150,1662,150C1624.6,150,1588,150,1551,150C1513.8,150,1477,150,1440,150C1403.1,150,1366,150,1329,150C1292.3,150,1255,150,1218,150C1181.5,150,1145,150,1108,150C1070.8,150,1034,150,997,150C960,150,923,150,886,150C849.2,150,812,150,775,150C738.5,150,702,150,665,150C627.7,150,591,150,554,150C516.9,150,480,150,443,150C406.2,150,369,150,332,150C295.4,150,258,150,222,150C184.6,150,148,150,111,150C73.8,150,37,150,18,150L0,150Z"></path></svg>
 
-<div class="shop">
+<div class="shop" id="shop">
+    <!--cup cake-->
   <div class="text" >  
-    <h2>Lulli’s Bite Cupcakes – Pure Sweetness!</h2>
+    <h2 id="cupcake">Lulli’s Bite Cupcakes – Pure Sweetness!</h2>
     <p>Delicious handcrafted cupcakes with customizable fillings, toppings, and frostings. Order now!</p>
    </div> 
 
-<div class="products" id="cupcake">
+<div class="products" >
     <div class="product" onclick="openModal('image/chocola-removebg-preview.png', 'Chocolate Cupcake', '100 DA', 'chocolate')">
         <img src="image/chocola-removebg-preview.png" alt="Chocolate Cupcake">
         <h3>Chocolate Cupcake</h3>
@@ -103,34 +102,118 @@
         <h3>Lemon Cupcake</h3>
         <p>Price: <strong>150 DA</strong></p>
     </div>
+    <!--cake-->
     <div class="text" >  
-        <h2>Lulli’s Bite patessrie – Pure Sweetness!</h2>
-        <p>Delicious handcrafted cupcakes with customizable fillings, toppings, and frostings. Order now!</p>
+        <h2>Lulli’s Bite Cakes – Soft, Moist, and Simply Irresistible!</h2>
+        <p>Our handcrafted cakes are baked to perfection, with rich flavors and a melt-in-your-mouth texture. Whether for celebrations or sweet cravings, every slice is pure joy!
+
+            Order now and make every moment special!</p>
        </div> 
-       <div class="products" id="cupcake">
-        <div class="product" onclick="openModal('image/chocola-removebg-preview.png', 'Chocolate Cupcake', '100 DA', 'chocolate')">
-            <img src="image/chocola-removebg-preview.png" alt="Chocolate Cupcake">
-            <h3>Chocolate Cupcake</h3>
-            <p>Price: <strong>100 DA</strong></p>
+       <div class="products" id="patessrie">
+        <div class="product" onclick="openModal('image/bro-removebg-preview.png', 'brownie', '450DA', 'brownie')">
+            <img src="image/bro-removebg-preview.png" alt="brownie">
+            <h3>brownie</h3>
+            <p>Price: <strong>450 DA</strong></p>
         </div>
     
-        <div class="product" onclick="openModal('image/vanilla-removebg-preview.png', 'Vanilla Cupcake', '150 DA', 'vanilla')">
-            <img src="image/vanilla-removebg-preview.png" alt="Vanilla Cupcake">
-            <h3>Vanilla Cupcake</h3>
+        <div class="product" onclick="openModal('image/HH-removebg-preview.png', 'tiramissu', '450 DA', 'vanilla')">
+            <img src="image/HH-removebg-preview.png" alt="tiramissu">
+            <h3>tiramissu</h3>
+            <p>Price: <strong>350 DA</strong></p>
+        </div>
+        <div class="product" onclick="openModal('image/JJ-removebg-preview.png', 'fresier', '450 DA', 'vanilla')">
+            <img src="image/JJ-removebg-preview.png" alt="Fresier">
+            <h3>Fresier</h3>
+            <p>Price: <strong>450 DA</strong></p>
+        </div>
+        <div class="product" onclick="openModal('image/ared-removebg-preview.png', 'fRed Velvet cake', '300 DA', 'vanilla')">
+            <img src="image/ared-removebg-preview.png" alt="Red Velvet cake">
+            <h3>Red Velvet cake</h3>
+            <p>Price: <strong>300 DA</strong></p>
+        </div>
+        <div class="product" onclick="openModal('image/ver-removebg-preview-.png', 'verrine', '300 DA', 'vanilla')">
+            <img src="image/ver-removebg-preview.png" alt="verrine">
+            <h3>verrine</h3>
+            <p>Price: <strong>300 DA</strong></p>
+        </div>
+        <div class="product" onclick="openModal('image/Tranch-removebg-preview.png', 'Tranche', '150 DA', 'vanilla')">
+            <img src="image/Tranch-removebg-preview (1).png" alt="Fresier">
+            <h3>tranche</h3>
             <p>Price: <strong>150 DA</strong></p>
         </div>
-    
-        <div class="product" onclick="openModal('image/red-removebg-preview.png', 'Red Velvet Cupcake', '150 DA', 'red-velvet')">
-            <img src="image/red-removebg-preview.png" alt="Red Velvet Cupcake">
-            <h3>Red Velvet Cupcake</h3>
-            <p>Price: <strong>150 DA</strong></p>
+        <div class="product" onclick="openModal('image/lotus-removebg-preview.png', 'lotus chess cake', '400 DA', 'vanilla')">
+            <img src="image/lotus-removebg-preview.png" alt="lotus chess cake">
+            <h3>lotus chess cake</h3>
+            <p>Price: <strong>400 DA</strong></p>
         </div>
-    
-        <div class="product" onclick="openModal('image/citon-removebg-preview.png', 'Lemon Cupcake', '150 DA', 'lemon')">
-            <img src="image/citon-removebg-preview.png" alt="Lemon Cupcake">
-            <h3>Lemon Cupcake</h3>
-            <p>Price: <strong>150 DA</strong></p>
+        <div class="product" onclick="openModal('image/Lemon-removebg-preview.png', 'lemon chess cake', '300 DA', 'vanilla')">
+            <img src="image/lemon-removebg-preview.png" alt="lemon chess cake">
+            <h3>lemon chess cake</h3>
+            <p>Price: <strong>300 DA</strong></p>
         </div>
+        <div class="product" onclick="openModal('image/_é-removebg-preview.png', 'strawberry Chess cake', '450 DA', 'vanilla')">
+            <img src="image/_é-removebg-preview.png" alt="strawberry Chess cake">
+            <h3>strawberry Chess cake</h3>
+            <p>Price: <strong>450 DA</strong></p>
+        </div>
+        <div class="product" onclick="openModal('image/ii-removebg-preview.png', 'sain-sebastien chess cake', '450 DA', 'vanilla')">
+            <img src="image/ii-removebg-preview.png" alt="sain-sebastien chess cake">
+            <h3>sain-sebastien chess cake</h3>
+            <p>Price: <strong>450 DA</strong></p>
+        </div>
+        <div class="product" onclick="openModal('image/JJ-removebg-preview.png', 'pistachio chescake', '450 DA', 'vanilla')">
+            <img src="image/ss-removebg-preview.png" alt="pistachio chess cake">
+            <h3>pistachio chess cake</h3>
+            <p>Price: <strong>450 DA</strong></p>
+        </div>
+        <div class="product" onclick="openModal('Image/bb-removebg-preview.png', 'oreo chess cake', '300 DA', 'lemon')">
+            <img src="image/bb-removebg-preview.png" alt="oreo chess cake">
+            <h3>oreo Chess cake</h3>
+            <p>Price: <strong>300DA</strong></p>
+        </div>
+        <!-- cokies-->
+        <div class="text" >  
+            <h2 id="cupcake">Lulli’s Bite Cookies – Crunchy, Chewy, Irresistible!</h2>
+            <p>Baked to perfection, our cookies are the ultimate treat—crispy on the edges, soft in the center, and packed with delicious flavors. From classic chocolate chip to indulgent hazelnut, there’s a bite for everyone!
+
+                Order now and enjoy the sweetness</p>
+        
+        <div class="products" >
+            <div class="product" onclick="openModal('Image/pis-removebg-preview.png', 'classic cookies', '150 DA', 'chocolate')">
+                <img src="image/pis-removebg-preview.png" alt="classic cookies">
+                <h3>classic cookies</h3>
+                <p>Price: <strong>150 DA</strong></p>
+            </div>
+        
+            <div class="product" onclick="openModal('image/oista-removebg-preview.png', 'Pistachio cookies', '200 DA', 'vanilla')">
+                <img src="image/oista-removebg-preview.png" alt="Pistachio cookies">
+                <h3>Pistachio cookies</h3>
+                <p>Price: <strong>200 DA</strong></p>
+            </div>
+        
+            <div class="product" onclick="openModal('image/val-removebg-preview.png', 'Red Velvet Cookies', '150 DA', 'red-velvet')">
+                <img src="image/val-removebg-preview.png" alt="Red Velvet Cookies">
+                <h3>Red Velvet Cookies</h3>
+                <p>Price: <strong>150 DA</strong></p>
+            </div>
+            <div class="text" >  
+                <h2>Lulli’s Bite Savory Mini Bites – Small, Flavorful, Irresistible</h2>
+                <p>Soft, golden buns filled with delicious savory ingredients, our mini bites are perfect for appetizers, snacks, or gatherings. A tasty twist on mini burgers, packed with flavor in every bite!
+
+                    Order now and savor the goodness!!</p>
+               </div> 
+               <div class="products" id="patessrie">
+                <div class="product" onclick="openModal('image/bro-removebg-preview.png', 'brownie', '450DA', 'vanilla')">
+                    <img src="image/bro-removebg-preview.png" alt="brownie">
+                    <h3>brownie</h3>
+                    <p>Price: <strong>450 DA</strong></p>
+                </div>
+            
+                <div class="product" onclick="openModal('image/HH-removebg-preview.png', 'tiramissu', '450 DA', 'vanilla')">
+                    <img src="image/HH-removebg-preview.png" alt="tiramissu">
+                    <h3>tiramissu</h3>
+                    <p>Price: <strong>350 DA</strong></p>
+                </div>
 </div>
 
 <!-- fenaitre-->
@@ -203,7 +286,11 @@
             filling: ["Lemon Curd", "Cream Cheese Lemon Filling", "No Filling"],
             topping: ["No Topping", "Lemon Zest"],
             frosting: ["No Frosting", "Lemon Buttercream"]
+        },
+        noadd:{
+            
         }
+        
     };
 
     function populateSelect(id, optionsArray) {
